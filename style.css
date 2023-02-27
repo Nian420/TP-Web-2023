@@ -100,6 +100,7 @@ nav {
   position: sticky;
 	top: 0px;
   background-color: rgba(255,255,255,0.85);
+	z-index:20;
 }
 
 p {
@@ -125,22 +126,25 @@ p {
 	align-items: center;
 	justify-content: space-evenly;
 	flex-direction: column; /* Ajout de la propriété flex-direction */
+	animation: out 1s;
 }
 
 @keyframes in {
 	from { transform: scale(1); }
-	to { transform: scale(1.8); }
+	to {
+		transform: scale(1.8);
+		background-color: rgba(255,255,255,0.85);
+		z-index:10; }
 }
 @keyframes out {
-	from{ transform: scale(1.8); }
-	to { transform: scale(1); }
+	from{
+		transform: scale(1.8);
+		background-color: rgba(255,255,255,0.85);
+		z-index:10;  }
+	to {
+		transform: scale(1); }
 }
 
-.img {
-	/* transform: scale(1);
-	transition: transform 2s; */
-	animation: out 1s;
-}
 .img:hover {
 	/* transform: scale(1.8);
 	transition: transform 2s; */
@@ -149,27 +153,27 @@ p {
 }
 
 #titre-head:hover{
-	animation: animatebutton 9s;
+	animation: animatebutton 3s;
 	animation-fill-mode: forwards;
 }
 
 header {
-	perspective: 980px;
+	perspective: 240px;
 }
 
 @keyframes animatebutton {
 	from {}
-	40% {
-			transform: scale(5.1) rotate(360deg);
+	30% {
+			transform: scale(2.1);
 		}
-	70% {
+	60% {
 			transform: scale(1);
 	}
 	80% {
-			transform: rotate3d(100px, 100px, 180deg);
+			transform : scale(1.2) rotateX(360deg) ;
 	}
 		to {
-			transform: scale(1.2) rotate(-360deg);
+			transform: scale(1) rotateX(0deg) ;
 		}
 }
 .img > img {
@@ -232,6 +236,7 @@ header {
 	max-height: inherit;
 	border-style: ridge;
 	margin:3px;
+	z-index:0;
 }
 
 #Form-div {
@@ -358,22 +363,17 @@ footer{
 	}
 
 	@media print {
-
-
 		body{
 			grid-template-columns: 0 1fr 0;
 			width: 100%;
 		}
 		header{
-			height: 50%;
+		height: 5cm;
 		}
-
 		nav{
 			display: none;
 		}
-
-		section{
-
+		#Form-div {
+			display: none;
 		}
-
 	}
