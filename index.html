@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="La Commune de Gland. La Géographie de Gland. Gland dans l'Yonne CP 89740">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/GLAND-89.png">
+    <title>GLAND dans l'Yonne</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
+  </head>
+
+  <body>
+    <header>
+        <h1 id="titre-head">La Commune de <strong>GLAND</strong> dans l'<em>Yonne</em></h1>
+        <div id="infohead">
+          <p id="CP-head">Code Postal: 89440</p>
+          <p id="coord-head">E:791 069.76m N:6 747 548.30m Altitude: 226m Lambert93</p>
+          <p id="copyright">Licence Libre CC BY-NC 4.0</p>
+        </div>
+
+    </header>
+    <main>
+      <nav>
+        <span class="nav" id="nav1"><a href="#Thématiques"><strong>Thèmes</strong></a></span>
+        <span class="nav" id="nav2"><a href="#Galery"><strong>Galerie Photos</strong></a></span>
+        <span class="nav" id="nav3"><a href="#Géographie"><strong>Situation Géographique</strong></a></span>
+      </nav>
+      <section class="content" id="Thématiques">
+        <div class="text-content" id="theme1">
+          <h2>Thématiques:</h2>
+          <h3 class="title-theme" id="part1">Généralités:</h3>
+          <div  class="text" id="text-part1">
+            <p>Gland est une commune française située dans le département de l'Yonne,
+            en région Bourgogne-Franche-Comté. Elle est une commune rurale, car elle fait partie des communes
+            peu ou très peu denses, au sens de la grille communale de densité de l'Insee.</p>
+            <p>Les terres, qui étaient tenues en franche aumône par l'abbaye de Molosmes, relevaient du comté de Tonnerre
+            qui les garda jusqu'à la Révolution.</p>
+          </div>
+        </div>
+        <div class="text-content" id="theme2">
+          <h3 class="title-theme" id="part2">Patrimoines:</h3>
+          <div  class="text" id="text-part2">
+            <p>L’église Saint-Etienne a été construite en 1827 avec les matériaux de la chapelle
+            Saint Nicolas, située à l’époque au centre du cimetière. Elle possède une nef de goût toscan.
+            Situé dans le centre du village, l’édifice abrite une puissante cloche et un bénitier en fonte
+            coulé en 1603 et offert en 1635 par Noble Marin NOËL.</p>
+            <p>Un ancien couvent bénédictin est également présent sur la commune. Il est surmonté d'une
+              statue de la Vierge à l'Enfant ; la statue appartient toujours à l'évêché de Sens.</p>
+            <p>Sous la Mairie se cache une rareté architecturale, le lavoir. Construit en 1833,
+            il dispose de deux bassins joints par la longueur et surplombés de voûtes et d’arcades.</p>
+          </div>
+        </div>
+        <div class="text-content" id="theme3">
+          <h3 class="title-theme" id="part3">Démographie et Géographie:</h1>
+          <div class="text" id="text-part3">
+            <p>Avec une densité de population de 2,8hab/km<sup>2</sup>, c'est habitant, les <em>Glandinois</em> sont au nombre de 46 en 2020.
+              Contrairement à 378 habitants en 1793, 209 habitants en 1896. Depuis 1962,
+              où sa population était de 100 habitants, on peut dire que sa population
+              stagne autour de 50 habitants avec un minimum de 37 en 2013. Il y a environ autant de résidence secondaire que de résidence principale.
+              Selon <a href="https://www.insee.fr/en/statistiques/6457611?geo=COM-89191#chiffre-cle-1" target="_blank" title="INSEE Gland Yonne">l'INSEE</a>
+              Gland à une population vieillissante même si de jeune pousses y grandissent toujours.</p>
+            <p>Cette commune française est situé dans la région Bourgogne-Franche-Comté, dans le département
+            de l'Yonne. La commune est situé à une altitude minimum de 212m et à un maximum de 312m. Sa superficie est de 16,67km<sup>2</sup>, ce qui en fait une commune assez vaste,
+            ramené à sa population. <a href="http://www.mairiedegland02.fr/index.htm" target="_blank" href="Gland dans l'Aisne"><em>Gland</em></a>,
+            dans l'Aisne, avec une population de 438 habitants n'a qu'une superficie de 5,65km<sup>2</sup>. La répartition détaillée en 2018
+            est la suivante : forêts (56 %), terres arables (41,6 %), zones agricoles hétérogènes (2,4 %).</p>
+          </div>
+        </div>
+      </section>
+      <section class="content" id="Galery">
+        <h2>Galerie Photos:</h2>
+        <div id="photos">
+          <div class="img" id="img1">
+            <img src="image/GLAND-89.png" alt="Armoiries de la Commune">
+            <p>Armoirie de la Commune</p>
+          </div>
+          <div class="img" id="img2">
+            <img src="image/panneau-ville.jpg" alt="Panneau de la Commune">
+            <p>Panneau de la Commune</p>
+          </div>
+          <div class="img" id="img3">
+            <img src="image/eglise.jpg" alt="Eglise de la Commune">
+            <p>Eglise de la Commune</p>
+          </div>
+          <div class="img" id="img4">
+            <img src="image/pos-commune.PNG" alt="position en France">
+            <p>Localisation en France</p>
+          </div>
+          <div class="img" id="img5">
+            <img src="image/HistoPop.png" alt="Histogramme de la population de 1800 à aujourd'hui">
+            <p>Histogramme de la population de 1800 à nos jours</p>
+          </div>
+          <div class="img" id="img6">
+            <img src="image/carteInfraOccup2018.png" alt="Infrastructure et Occupation des Sols en 2018">
+              <p>Infrastructure et Occupation des sols en 2018</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content" id="Géographie">
+        <h2>Géographie:</h2>
+        <div id="geo">
+          <table id="tgeo">
+            <tr><th class="tbcelle">Villes</th><th class="tbcelle">Distances et directions</th></tr>
+            <tr><td class="tbcelle">Auxerre</td><td class="tbcelle">~50km à l'Ouest</td></tr>
+            <tr><td class="tbcelle">Paris</td><td class="tbcelle">~200km au Nord-Ouest</td></tr>
+            <tr><td class="tbcelle">Troyes</td><td class="tbcelle">~60km au Nord</td></tr>
+            <tr><td class="tbcelle">Nancy</td><td class="tbcelle">~200km au Nord-Est</td></tr>
+            <tr><td class="tbcelle">Dijon</td><td class="tbcelle">~100km au Sud-Est</td></tr>
+          </table>
+          <div id="map"></div>
+        </div>
+      </section>
+      <div id="Form-div">
+        <div class="text" id="text-form">
+          <p>Formulaire de contact:</p>
+        </div>
+        <form id="formulaire" action="script.js" method="get">
+          <input id="email-form" type="email" name="prenom" placeholder="E-mail" inputmode="email">
+          <textarea id="message-form" name="infos" placeholder="Votre message"></textarea>
+          <input id="bouton-form" type="submit" name="envoi" value="Envoyer">
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer">
+        <p id="source"><a href="https://fr.wikipedia.org/wiki/Gland_(Yonne)" target="_blank" href="Page de Gland sur Wikipédia">Source Wikipédia</a>, INSEE, IGN, <a href="https://www.armorialdefrance.fr" target="_blank">armorialdefrance.fr</a> et <a href="https://gland89.fr/la-commune/"
+          target="_blank" href="Gland dans l'Yonne">Le site de la Mairie de Gland</a></p>
+        <p id="text-credit">Site web réalisé par CZAPURA Florian dans le cadre d'un TP, Mars 2022</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+
+    <script src="script.js"></script>
+
+  </body>
+
+
+</html>
