@@ -2,3 +2,56 @@ html {
 	margin: 0 auto;
   font-family: Segoe UI;
 }
+body {
+  margin: 0 auto;
+	min-width: fit-content;
+	box-sizing: border-box;
+}
+header {
+	z-index: 1;
+  background-image:url("image/header-background.PNG");
+	background-size: cover;
+	background-position: center 50%;
+
+	text-align: center;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+header > * {
+	max-width: 980px;
+}
+#titre-head{
+	display:inline-block;;
+	background-color: rgba(240,240,240,0.42);
+	border-style: solid;
+	border-radius: 200px;
+	border-width: 2px;
+	text-align: center;
+	padding: 1%;
+}
+#infohead {
+	display: flex;
+	align-items: center;
+}
+#CP-head, #coord-head, #copyright {
+  background-color: rgba(240, 240, 240, 0.64);
+  border-radius: 4px;
+  width: max-content;
+  max-width: 100%;
+  padding: 1%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+body {
+	display: grid ;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 4fr 1fr 1fr;
+
+}

@@ -4,15 +4,12 @@ html {
   font-family: Segoe UI;
 }
 
-head {
-}
-
 a:link{
 	color:rgba(5,5,5,1);
 }
 
 a:hover{
-  color: rgba(20,256,20,0.95);
+  color: rgba(20,120,20,0.95);
   background-color: rgba(10,10,10,0.15);
 }
 
@@ -163,14 +160,11 @@ header {
 
 @keyframes animatebutton {
 	from {}
-	30% {
-			transform: scale(2.1);
+	33% {
+			transform: scale(2.1) rotateX(-360deg);
 		}
-	60% {
-			transform: scale(1);
-	}
-	80% {
-			transform : scale(1.2) rotateX(360deg) ;
+	67% {
+			transform : scale(-1.2) rotateX(360deg) ;
 	}
 		to {
 			transform: scale(1) rotateX(0deg) ;
