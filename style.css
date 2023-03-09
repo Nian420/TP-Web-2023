@@ -61,7 +61,7 @@ header > * {
 
 #titre-head{
 	display:inline-block;;
-	background-color: rgba(240,240,240,0.42);
+	background-color: rgba(240,240,240,0.66);
 	border-style: solid;
 	border-radius: 200px;
 	border-width: 2px;
@@ -115,14 +115,13 @@ p {
   width: 30%;
   margin: 6px;
   text-align: center;
-	/*max-width: 100%;*/ /*height: auto;*/
 	object-fit: cover;
 	border: 2px solid #ccc;
 	border-radius: 1px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	flex-direction: column; /* Ajout de la propriété flex-direction */
+	flex-direction: column;
 	animation: out 1s;
 }
 
@@ -143,14 +142,12 @@ p {
 }
 
 .img:hover {
-	/* transform: scale(1.8);
-	transition: transform 2s; */
 	animation: in 1s;
 	animation-fill-mode: forwards;
 }
 
 #titre-head:hover{
-	animation: animatebutton 3s;
+	animation: animatetitle 3s;
 	animation-fill-mode: forwards;
 }
 
@@ -158,10 +155,10 @@ header {
 	perspective: 240px;
 }
 
-@keyframes animatebutton {
+@keyframes animatetitle {
 	from {}
 	33% {
-			transform: scale(2.1) rotateX(-360deg);
+			transform: scale(1.1) rotateX(-360deg);
 		}
 	67% {
 			transform : scale(-1.2) rotateX(360deg) ;
@@ -355,19 +352,4 @@ footer{
 	    bottom: 40px;
 		}
 	}
-
-	@media print {
-		body{
-			grid-template-columns: 0 1fr 0;
-			width: 100%;
-		}
-		header{
-		height: 5cm;
-		}
-		nav{
-			display: none;
-		}
-		#Form-div {
-			display: none;
-		}
-	}
+}
