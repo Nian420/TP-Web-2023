@@ -8,7 +8,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marker = L.marker([47.822028,4.21704]).addTo(map);
 
 L.marker([47.822028,4.21704]).addTo(map)
-    .bindPopup('Gland la Belle Longitude: 47.822028 Latitude: 4.21704')
+    .bindPopup('Gland la Belle ; Longitude: 47.822028 Latitude: 4.21704')
     .openPopup();
 
 var popupgland = L.popup()

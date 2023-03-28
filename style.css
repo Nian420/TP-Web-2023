@@ -83,7 +83,51 @@ header > * {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	/*animation: pheadout 6s;*/
+	/*animation-iteration-count: 1;*/
+	perspective: 100px;
+}
 
+#CP-head {
+	animation: pheadoutP 3s;
+	animation-iteration-count: 1;
+	/*animation-fill-mode: forwards;*/
+}
+
+@keyframes pheadoutP {
+	from {  }
+
+	to {
+			transform: rotateX(-360deg);
+		}
+}
+
+#coord-head {
+	animation: pheadoutH 6s;
+	animation-iteration-count: 1;
+	/*animation-fill-mode: forwards;*/
+}
+
+@keyframes pheadoutH {
+	from {  }
+
+	to {
+			transform: rotateY(-360deg);
+		}
+}
+
+#copyright {
+	animation: pheadoutC 12s;
+	animation-iteration-count: 1;
+	/*animation-fill-mode: forwards;*/
+}
+
+@keyframes pheadoutC {
+	from {  }
+
+	to {
+			transform: rotateZ(-360deg);
+		}
 }
 
 main {
@@ -146,27 +190,24 @@ p {
 	animation-fill-mode: forwards;
 }
 
-#titre-head:hover{
-	animation: animatetitle 3s;
-	animation-fill-mode: forwards;
+#titre-head{
+	animation: titleout 6s;
+	animation-iteration-count: 2;
+	/*animation-fill-mode: forwards;*/
 }
 
 header {
-	perspective: 240px;
+	perspective: 300px;
 }
 
-@keyframes animatetitle {
-	from {}
-	33% {
-			transform: scale(1.1) rotateX(-360deg);
-		}
-	67% {
-			transform : scale(-1.2) rotateX(360deg) ;
-	}
-		to {
-			transform: scale(1) rotateX(0deg) ;
+@keyframes titleout {
+	from {  }
+
+	to {
+			transform: rotateX(-360deg);
 		}
 }
+
 .img > img {
   max-width: 90%;
 	margin-top: 1%;
